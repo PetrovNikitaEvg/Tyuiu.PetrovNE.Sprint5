@@ -24,7 +24,7 @@ namespace Tyuiu.PetrovNE.Sprint5.Task6.V8.Test
         {
             DataService ds = new DataService();
 
-            string path = @"C:\DataSprint5\InPutDataFileTask5V29.txt";
+            string path = @"C:\DataSprint5\InPutDataFileTask6V8.txt";
 
             int wait = 2, res = ds.LoadFromDataFile(path);
 
