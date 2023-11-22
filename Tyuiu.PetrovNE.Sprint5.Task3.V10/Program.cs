@@ -16,7 +16,7 @@ namespace Tyuiu.PetrovNE.Sprint5.Task3.V10
             Console.WriteLine("***************************************************************************");
             Console.WriteLine("* Спринт #5                                                               *");
             Console.WriteLine("* Тема: Класс File                                                        *");
-            Console.WriteLine("* Задание #2                                                              *");
+            Console.WriteLine("* Задание #3                                                              *");
             Console.WriteLine("* Вариант #9                                                              *");
             Console.WriteLine("* Выполнил: Петров Никита Евгеньевич | АСОиУБ-23-1                        *");
             Console.WriteLine("***************************************************************************");
