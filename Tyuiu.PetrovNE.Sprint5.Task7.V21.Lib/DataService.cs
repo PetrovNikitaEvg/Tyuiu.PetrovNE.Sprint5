@@ -14,6 +14,7 @@ namespace Tyuiu.PetrovNE.Sprint5.Task7.V21.Lib
         public string LoadDataAndSave(string path)
         {
             string pathSaveFile = $@"C:\DataSprint5\OutPutDataFileTask7V21.txt";
+            string pathSaveFile2 = $@"C:\Users\niki8\source\repos\Tyuiu.PetrovNE.Sprint5\Tyuiu.PetrovNE.Sprint5.Task7.V21\bin\Debug\OutPutDataFileTask7V21.txt";
 
             FileInfo fileInfo = new FileInfo(pathSaveFile);
             bool fileExists = fileInfo.Exists;
@@ -21,6 +22,14 @@ namespace Tyuiu.PetrovNE.Sprint5.Task7.V21.Lib
             if (fileExists)
             {
                 File.Delete(pathSaveFile);
+            }
+
+            FileInfo fileInfo2 = new FileInfo(pathSaveFile2);
+            bool fileExists2 = fileInfo.Exists;
+
+            if (fileExists2)
+            {
+                File.Delete(pathSaveFile2);
             }
 
             string MyStr = "";
@@ -40,8 +49,9 @@ namespace Tyuiu.PetrovNE.Sprint5.Task7.V21.Lib
                 }
             }
             File.AppendAllText(pathSaveFile, MyStr+Environment.NewLine);
+            File.AppendAllText(pathSaveFile2, MyStr + Environment.NewLine);
 
-            return pathSaveFile;
+            return pathSaveFile2;
         }
     }
 }
